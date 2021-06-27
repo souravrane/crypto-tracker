@@ -16,12 +16,10 @@ export default function Home({ filteredCoins }) {
   };
 
   return (
-    <Layout>
-      <div className="coin_app">
-        <SearchBar type="text" placeholder="Search" onChange={handleChange} />
-        <CoinList filteredCoins={allCoins} />
-      </div>
-    </Layout>
+    <div className="coin_app">
+      <SearchBar type="text" placeholder="Search" onChange={handleChange} />
+      <CoinList filteredCoins={allCoins} />
+    </div>
   );
 }
 
